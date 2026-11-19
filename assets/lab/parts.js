@@ -1,0 +1,8 @@
+export const parts=[
+ {name:'LiDAR',title:'RPLidar A2',role:'Cartographie',text:'Le télémètre mesure la distance aux surfaces autour du robot. Dans le projet, les relevés polaires servent à distinguer les murs et les obstacles.',signal:'Angle + distance → carte 2D',anchor:[0,47,-22],offset:[0,44,0]},
+ {name:'Caméra',title:'Caméra IMX219',role:'Vision',text:'La caméra transmet les images au Raspberry Pi. Le programme convertit les pixels en HSV pour repérer une balle de couleur dans la scène.',signal:'Image → masque de couleur',anchor:[0,18,72],offset:[0,15,32]},
+ {name:'Raspberry Pi',title:'Raspberry Pi',role:'Calcul embarqué',text:'Le Raspberry Pi exécute les programmes Python du projet. Il traite les images, récupère les mesures LiDAR et communique avec la carte de commande.',signal:'Capteurs → traitement Python',anchor:[-29,-1,3],offset:[-53,15,0]},
+ {name:'Arduino',title:'Arduino Mega 2560',role:'Commande',text:'La carte reçoit les consignes de déplacement par liaison série. Elle fait le lien entre le pilotage logiciel et les actionneurs.',signal:'Liaison série → commande moteur',anchor:[28,-1,5],offset:[53,13,0]},
+ {name:'Roues',title:'Train roulant',role:'Mobilité',text:'Les roues traduisent les commandes en déplacement. Le pilotage du projet utilise des mesures de calibration pour relier le temps de commande à une distance ou à un angle.',signal:'Commande → mouvement',anchor:[-61,-24,44],offset:[-8,-8,0]},
+ {name:'Châssis',title:'Châssis à deux plateaux',role:'Structure',text:'Cette maquette pédagogique dispose les capteurs en hauteur et les cartes entre deux plateaux. La vue éclatée permet de suivre leur implantation.',signal:'Structure → intégration des modules',anchor:[42,9,-45],offset:[0,0,0]}
+];
